@@ -72,6 +72,9 @@ public class StringUnpacker {
                     isPreviousOpenBrace = false;
             }
         }
+        if(isPreviousDigit){
+            return false;
+        }
         return braces == 0;
     }
 
